@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "neighborhoods": [
+    {
+      "citySlug": "boston",
+      "slug": "downtown",
+      "name": "Downtown",
+      "lat": 42.3554,
+      "lng": -71.064
+    },
+    {
+      "citySlug": "boston",
+      "slug": "financial-district",
+      "name": "Financial District",
+      "lat": 42.3555,
+      "lng": -71.056
+    },
+    {
+      "citySlug": "boston",
+      "slug": "seaport",
+      "name": "Seaport",
+      "lat": 42.3519,
+      "lng": -71.043
+    },
+    {
+      "citySlug": "boston",
+      "slug": "fort-point",
+      "name": "Fort Point",
+      "lat": 42.351,
+      "lng": -71.048
+    },
+    {
+      "citySlug": "boston",
+      "slug": "back-bay",
+      "name": "Back Bay",
+      "lat": 42.3496,
+      "lng": -71.077
+    },
+    {
+      "citySlug": "boston",
+      "slug": "south-end",
+      "name": "South End",
+      "lat": 42.341,
+      "lng": -71.072
+    },
+    {
+      "citySlug": "boston",
+      "slug": "south-boston",
+      "name": "South Boston",
+      "lat": 42.335,
+      "lng": -71.048
+    },
+    {
+      "citySlug": "boston",
+      "slug": "dorchester",
+      "name": "Dorchester",
+      "lat": 42.306,
+      "lng": -71.062
+    },
+    {
+      "citySlug": "boston",
+      "slug": "roxbury",
+      "name": "Roxbury",
+      "lat": 42.329,
+      "lng": -71.084
+    },
+    {
+      "citySlug": "boston",
+      "slug": "cambridge",
+      "name": "Cambridge",
+      "lat": 42.3585,
+      "lng": -71.1005
+    },
+    {
+      "citySlug": "boston",
+      "slug": "somerville",
+      "name": "Somerville",
+      "lat": 42.3876,
+      "lng": -71.0995
+    },
+    {
+      "citySlug": "boston",
+      "slug": "brighton",
+      "name": "Brighton",
+      "lat": 42.3527,
+      "lng": -71.16
+    }
+  ]
+}

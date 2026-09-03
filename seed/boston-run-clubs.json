@@ -1,0 +1,765 @@
+{
+  "schemaVersion": 1,
+  "compiledOn": "2026-09-02",
+  "note": "Every fact unverified. Defaults and loading rules: docs/build-session-v2.md, Seed data section.",
+  "meetSpots": {
+    "boston-common": {
+      "name": "Boston Common",
+      "neighborhood": "downtown",
+      "lat": 42.3554,
+      "lng": -71.064,
+      "precision": "block"
+    },
+    "park-street": {
+      "name": "Park Street",
+      "neighborhood": "downtown",
+      "lat": 42.3565,
+      "lng": -71.0625,
+      "precision": "block"
+    },
+    "government-center": {
+      "name": "Government Center",
+      "neighborhood": "downtown",
+      "lat": 42.3603,
+      "lng": -71.059,
+      "precision": "block"
+    },
+    "financial-district": {
+      "name": "Financial District",
+      "neighborhood": "financial-district",
+      "lat": 42.3555,
+      "lng": -71.056,
+      "precision": "neighborhood"
+    },
+    "seaport": {
+      "name": "Seaport",
+      "neighborhood": "seaport",
+      "lat": 42.3519,
+      "lng": -71.043,
+      "precision": "neighborhood"
+    },
+    "seaport-lululemon": {
+      "name": "lululemon Seaport, 395 Congress St",
+      "neighborhood": "seaport",
+      "lat": 42.3491,
+      "lng": -71.046,
+      "precision": "block"
+    },
+    "fort-point": {
+      "name": "Fort Point",
+      "neighborhood": "fort-point",
+      "lat": 42.351,
+      "lng": -71.048,
+      "precision": "neighborhood"
+    },
+    "back-bay": {
+      "name": "Back Bay",
+      "neighborhood": "back-bay",
+      "lat": 42.3496,
+      "lng": -71.077,
+      "precision": "neighborhood"
+    },
+    "south-end": {
+      "name": "South End",
+      "neighborhood": "south-end",
+      "lat": 42.341,
+      "lng": -71.072,
+      "precision": "neighborhood"
+    },
+    "south-boston": {
+      "name": "South Boston",
+      "neighborhood": "south-boston",
+      "lat": 42.335,
+      "lng": -71.048,
+      "precision": "neighborhood"
+    },
+    "dorchester": {
+      "name": "Dorchester",
+      "neighborhood": "dorchester",
+      "lat": 42.306,
+      "lng": -71.062,
+      "precision": "neighborhood"
+    },
+    "roxbury": {
+      "name": "Roxbury",
+      "neighborhood": "roxbury",
+      "lat": 42.329,
+      "lng": -71.084,
+      "precision": "neighborhood"
+    },
+    "cambridge-mit-track": {
+      "name": "MIT track, Cambridge",
+      "neighborhood": "cambridge",
+      "lat": 42.3585,
+      "lng": -71.1005,
+      "precision": "block"
+    },
+    "cambridge": {
+      "name": "Cambridge",
+      "neighborhood": "cambridge",
+      "lat": 42.365,
+      "lng": -71.104,
+      "precision": "neighborhood"
+    },
+    "somerville": {
+      "name": "Somerville",
+      "neighborhood": "somerville",
+      "lat": 42.3876,
+      "lng": -71.0995,
+      "precision": "neighborhood"
+    },
+    "davis-square": {
+      "name": "Davis Square, Somerville",
+      "neighborhood": "somerville",
+      "lat": 42.3967,
+      "lng": -71.1224,
+      "precision": "block"
+    },
+    "union-square-bow-market": {
+      "name": "Bow Market, Union Square, Somerville",
+      "neighborhood": "somerville",
+      "lat": 42.3795,
+      "lng": -71.095,
+      "precision": "block"
+    },
+    "brighton-oak-square": {
+      "name": "Oak Square, Brighton",
+      "neighborhood": "brighton",
+      "lat": 42.3527,
+      "lng": -71.16,
+      "precision": "block"
+    },
+    "boston-varies": {
+      "name": "Boston, location varies",
+      "neighborhood": null,
+      "lat": 42.3601,
+      "lng": -71.0589,
+      "precision": "city"
+    }
+  },
+  "clubs": [
+    {
+      "slug": "261-fearless-club-new-england",
+      "name": "261 Fearless Club New England",
+      "category": "national",
+      "instagram": "261fearlessclubnewengland",
+      "identityNote": "Women. Social, non-competitive.",
+      "scheduleStatus": "check_instagram",
+      "sessions": []
+    },
+    {
+      "slug": "dashing-whippets-boston",
+      "name": "Dashing Whippets Boston",
+      "category": "national",
+      "instagram": "dwrtboston",
+      "neighborhood": "cambridge",
+      "cost": "dues",
+      "costNote": "Annual dues.",
+      "paceNote": "Competitive team. Coached track workouts, training plans.",
+      "sessions": [
+        {
+          "weekday": 3,
+          "startLocal": null,
+          "meetSpot": "cambridge-mit-track",
+          "seasonNote": "Wednesday mornings. Start time not confirmed."
+        }
+      ]
+    },
+    {
+      "slug": "endorphins-run-club-boston",
+      "name": "Endorphins Run Club",
+      "category": "national",
+      "website": "https://app.endorphinsrunning.com/events",
+      "neighborhood": "downtown",
+      "sessions": [
+        {
+          "weekday": 1,
+          "startLocal": "06:45",
+          "meetSpot": "boston-common"
+        }
+      ]
+    },
+    {
+      "slug": "frontrunners-boston",
+      "name": "Frontrunners Boston",
+      "category": "national",
+      "instagram": "frontrunnersboston",
+      "identityNote": "LGBTQ+ and allies.",
+      "socialAfter": "Often brunch after the Saturday run.",
+      "sessions": [
+        {
+          "weekday": 4,
+          "startLocal": "19:00",
+          "meetSpot": "cambridge",
+          "meetSpotDetail": "Cambridge. Exact spot not confirmed."
+        },
+        {
+          "weekday": 6,
+          "startLocal": "10:00",
+          "meetSpot": "south-end",
+          "meetSpotDetail": "South End. Exact spot not confirmed."
+        }
+      ]
+    },
+    {
+      "slug": "lunge-run-club-boston",
+      "name": "Lunge Run Club",
+      "category": "national",
+      "instagram": "lungerunclubboston",
+      "neighborhood": "downtown",
+      "identityNote": "Singles. Run club from the Lunge dating app.",
+      "sessions": [
+        {
+          "weekday": 3,
+          "startLocal": "18:45",
+          "meetSpot": "government-center"
+        }
+      ]
+    },
+    {
+      "slug": "midnight-runners-boston",
+      "name": "Midnight Runners Boston",
+      "category": "national",
+      "instagram": "midnightrunnersboston",
+      "distanceNote": "5 to 10K bootcamp-style run with music and exercise stops that regroup everyone.",
+      "socialAfter": "Social after.",
+      "sessions": [
+        {
+          "weekday": 2,
+          "startLocal": "19:00",
+          "meetSpot": "boston-varies"
+        },
+        {
+          "weekday": 0,
+          "startLocal": "10:00",
+          "meetSpot": "boston-varies"
+        }
+      ]
+    },
+    {
+      "slug": "november-project-boston",
+      "name": "November Project Boston",
+      "category": "national",
+      "instagram": "novemberprojectbos",
+      "cost": "free",
+      "distanceNote": "Outdoor workouts mixing running and bodyweight exercises. Boston is the original chapter.",
+      "sessions": [
+        {
+          "weekday": 1,
+          "startLocal": null,
+          "meetSpot": "boston-varies",
+          "seasonNote": "Mornings. Location and time vary by day, check Instagram."
+        },
+        {
+          "weekday": 3,
+          "startLocal": null,
+          "meetSpot": "boston-varies",
+          "seasonNote": "Mornings."
+        },
+        {
+          "weekday": 5,
+          "startLocal": null,
+          "meetSpot": "boston-varies",
+          "seasonNote": "Mornings."
+        }
+      ]
+    },
+    {
+      "slug": "backyard-run-club",
+      "name": "Backyard Run Club",
+      "category": "brand_gym",
+      "instagram": "backyard.bos",
+      "neighborhood": "fort-point",
+      "sessions": [
+        {
+          "weekday": 6,
+          "startLocal": "08:00",
+          "meetSpot": "fort-point"
+        }
+      ]
+    },
+    {
+      "slug": "beam-run-club",
+      "name": "Beam Run Club",
+      "category": "brand_gym",
+      "instagram": "beam",
+      "neighborhood": "seaport",
+      "sessions": [
+        {
+          "weekday": 3,
+          "startLocal": null,
+          "cadence": "biweekly",
+          "meetSpot": "seaport-lululemon",
+          "seasonNote": "Every other Wednesday. A May 2026 listing started and finished at lululemon Seaport. Time not confirmed."
+        }
+      ]
+    },
+    {
+      "slug": "bspoke-southie-run-club",
+      "name": "B/SPOKE Southie Run Club",
+      "category": "brand_gym",
+      "instagram": "bspokestudios",
+      "neighborhood": "south-boston",
+      "sessions": [
+        {
+          "weekday": 3,
+          "startLocal": "17:45",
+          "meetSpot": "south-boston"
+        }
+      ]
+    },
+    {
+      "slug": "ebf-fidi-run-club",
+      "name": "EBF FiDi Run Club",
+      "category": "brand_gym",
+      "instagram": "everybodyfights",
+      "neighborhood": "financial-district",
+      "paceNote": "All paces welcome.",
+      "sessions": [
+        {
+          "weekday": 3,
+          "startLocal": "17:30",
+          "meetSpot": "financial-district"
+        }
+      ]
+    },
+    {
+      "slug": "ebf-seaport-run-club",
+      "name": "EBF Seaport Run Club",
+      "category": "brand_gym",
+      "instagram": "everybodyfights",
+      "neighborhood": "seaport",
+      "paceNote": "All paces welcome.",
+      "socialAfter": "A club shirt after three runs.",
+      "sessions": [
+        {
+          "weekday": 5,
+          "startLocal": "07:15",
+          "meetSpot": "seaport"
+        }
+      ]
+    },
+    {
+      "slug": "fp-movement-run-club-boston",
+      "name": "FP Movement Run Club",
+      "category": "brand_gym",
+      "instagram": "fpmovement",
+      "neighborhood": "back-bay",
+      "distanceNote": "Community 5K from the Back Bay store.",
+      "sessions": [
+        {
+          "weekday": 6,
+          "startLocal": null,
+          "cadence": "monthly",
+          "meetSpot": "back-bay",
+          "seasonNote": "Monthly, Saturdays. Date and time on Instagram."
+        }
+      ]
+    },
+    {
+      "slug": "heartbreak-hill-running-co",
+      "name": "Heartbreak Hill Running Co.",
+      "category": "brand_gym",
+      "instagram": "heartbreak.bos",
+      "pacePolicy": "pace_groups",
+      "paceNote": "Coached track workouts, weekly group runs, pace groups for all levels, from several Boston store locations.",
+      "scheduleStatus": "check_instagram",
+      "sessions": []
+    },
+    {
+      "slug": "hoka-boston-run-club",
+      "name": "HOKA Boston Run Club",
+      "category": "brand_gym",
+      "instagram": "hoka",
+      "neighborhood": "back-bay",
+      "paceNote": "All paces.",
+      "sessions": [
+        {
+          "weekday": 3,
+          "startLocal": "18:30",
+          "meetSpot": "back-bay"
+        }
+      ]
+    },
+    {
+      "slug": "livefitarmy-run-club",
+      "name": "LiveFitArmy Run Club",
+      "category": "brand_gym",
+      "heyloUrl": "https://www.heylo.com/g/7b756fd0-a5c9-4e9c-a9a8-f46af2e29a7a",
+      "scheduleStatus": "check_instagram",
+      "sessions": []
+    },
+    {
+      "slug": "mystryde-southie",
+      "name": "MYSTRYDE Southie",
+      "category": "brand_gym",
+      "instagram": "mystryde",
+      "neighborhood": "south-boston",
+      "paceNote": "All paces. Strollers and dogs welcome.",
+      "sessions": [
+        {
+          "weekday": 2,
+          "startLocal": "06:30",
+          "meetSpot": "south-boston"
+        }
+      ]
+    },
+    {
+      "slug": "retro-fitness-cambridge-run-club",
+      "name": "Retro Fitness Cambridge Run Club",
+      "category": "brand_gym",
+      "instagram": "retrofitnesscambridge",
+      "neighborhood": "cambridge",
+      "sessions": [
+        {
+          "weekday": 3,
+          "startLocal": "18:30",
+          "meetSpot": "cambridge",
+          "meetSpotDetail": "Meets at the gym."
+        }
+      ]
+    },
+    {
+      "slug": "tracksmith-boston",
+      "name": "Tracksmith Boston",
+      "category": "brand_gym",
+      "instagram": "tracksmithrunning",
+      "neighborhood": "back-bay",
+      "scheduleStatus": "check_instagram",
+      "sessions": []
+    },
+    {
+      "slug": "black-men-run-boston",
+      "name": "Black Men Run Boston",
+      "category": "identity",
+      "instagram": "bmrboston",
+      "neighborhood": "roxbury",
+      "pacePolicy": "no_drop",
+      "identityNote": "Black men. Part of the national Black Men Run organization.",
+      "sessions": [
+        {
+          "weekday": 4,
+          "startLocal": "06:00",
+          "meetSpot": "roxbury"
+        },
+        {
+          "weekday": 6,
+          "startLocal": "08:00",
+          "meetSpot": "roxbury"
+        }
+      ]
+    },
+    {
+      "slug": "bos-queer-run-club",
+      "name": "BOS Queer Run Club",
+      "category": "identity",
+      "instagram": "bosqueerrunclub",
+      "identityNote": "Queer run club, all paces.",
+      "scheduleStatus": "check_instagram",
+      "sessions": []
+    },
+    {
+      "slug": "boston-latina-run-club",
+      "name": "Boston Latina Run Club",
+      "category": "identity",
+      "instagram": "bostonlatinarunclub",
+      "neighborhood": "downtown",
+      "identityNote": "Latina led. All paces and levels.",
+      "sessions": [
+        {
+          "weekday": 6,
+          "startLocal": "09:00",
+          "meetSpot": "park-street"
+        }
+      ]
+    },
+    {
+      "slug": "the-brunch-co",
+      "name": "the bRUNch Co.",
+      "category": "identity",
+      "website": "https://paa.ge/thebrunchco/en",
+      "identityNote": "Women and the LGBTQ+ community.",
+      "socialAfter": "Brunch.",
+      "scheduleStatus": "check_instagram",
+      "sessions": []
+    },
+    {
+      "slug": "davis-square-runners",
+      "name": "Davis Square Runners",
+      "category": "identity",
+      "instagram": "davissquarerunners",
+      "neighborhood": "somerville",
+      "identityNote": "Explicitly LGBTQ+ inclusive.",
+      "sessions": [
+        {
+          "weekday": 2,
+          "startLocal": null,
+          "meetSpot": "davis-square",
+          "seasonNote": "Tuesday. Time not confirmed."
+        },
+        {
+          "weekday": 0,
+          "startLocal": null,
+          "meetSpot": "davis-square",
+          "seasonNote": "Sunday. Time not confirmed."
+        }
+      ]
+    },
+    {
+      "slug": "great-day-for-runners",
+      "name": "Great Day For Runners",
+      "category": "identity",
+      "instagram": "greatdayforrunners",
+      "neighborhood": "south-end",
+      "identityNote": "South End club known for a gay bar fun run.",
+      "scheduleStatus": "check_instagram",
+      "sessions": []
+    },
+    {
+      "slug": "last-lap-boston",
+      "name": "Last Lap Boston",
+      "category": "identity",
+      "instagram": "lastlapboston",
+      "neighborhood": "dorchester",
+      "sessions": [
+        {
+          "weekday": 1,
+          "startLocal": "18:30",
+          "meetSpot": "dorchester"
+        },
+        {
+          "weekday": 6,
+          "startLocal": "08:30",
+          "meetSpot": "dorchester"
+        }
+      ]
+    },
+    {
+      "slug": "pioneers-run-crew",
+      "name": "Pioneers Run Crew",
+      "category": "identity",
+      "instagram": "pioneersrc",
+      "neighborhood": "dorchester",
+      "identityNote": "Black and Brown led, founded 2017. Mission: make running accessible to Boston's BIPOC community.",
+      "sessions": [
+        {
+          "weekday": 3,
+          "startLocal": "18:30",
+          "meetSpot": "dorchester"
+        }
+      ]
+    },
+    {
+      "slug": "trailblazhers-run-co",
+      "name": "TrailblazHers Run Co",
+      "category": "identity",
+      "instagram": "trailblazhersrunco",
+      "identityNote": "Women's running community.",
+      "scheduleStatus": "check_instagram",
+      "sessions": []
+    },
+    {
+      "slug": "88-run-club",
+      "name": "88 Run Club",
+      "category": "social",
+      "website": "https://www.88club.boston/runclub",
+      "neighborhood": "back-bay",
+      "cost": "free",
+      "distanceNote": "Casual 5K.",
+      "socialAfter": "Complimentary bites after. 21+.",
+      "sessions": [
+        {
+          "weekday": 4,
+          "startLocal": "18:00",
+          "meetSpot": "back-bay"
+        }
+      ]
+    },
+    {
+      "slug": "boston-road-runners",
+      "name": "Boston Road Runners",
+      "category": "social",
+      "instagram": "bostonroadrunners",
+      "neighborhood": "back-bay",
+      "cost": "free",
+      "costNote": "Nonprofit. Free weekly runs, charity races through the year.",
+      "sessions": [
+        {
+          "weekday": 2,
+          "startLocal": "18:00",
+          "meetSpot": "back-bay"
+        },
+        {
+          "weekday": 6,
+          "startLocal": "08:00",
+          "meetSpot": "back-bay"
+        }
+      ]
+    },
+    {
+      "slug": "boston-run-and-chug",
+      "name": "Boston Run & Chug",
+      "category": "social",
+      "instagram": "bostonrnc",
+      "bagDrop": "yes",
+      "paceNote": "All paces.",
+      "distanceNote": "Casual 5K through a different neighborhood each week.",
+      "socialAfter": "Drinks after.",
+      "sessions": [
+        {
+          "weekday": 3,
+          "startLocal": "19:00",
+          "meetSpot": "boston-varies"
+        }
+      ]
+    },
+    {
+      "slug": "brighton-bangers",
+      "name": "Brighton Bangers",
+      "category": "social",
+      "instagram": "brightonbangers",
+      "neighborhood": "brighton",
+      "socialAfter": "Ends at The Last Drop, Oak Square. Around since 2012.",
+      "sessions": [
+        {
+          "weekday": 3,
+          "startLocal": "19:00",
+          "meetSpot": "brighton-oak-square"
+        }
+      ]
+    },
+    {
+      "slug": "castle-island-track-club",
+      "name": "Castle Island Track Club",
+      "category": "social",
+      "instagram": "castleislandtrackclub",
+      "neighborhood": "south-boston",
+      "scheduleStatus": "check_instagram",
+      "sessions": []
+    },
+    {
+      "slug": "portico-point-to-pint-runners",
+      "name": "Portico Point to Pint Runners",
+      "category": "social",
+      "instagram": "portico_point_to_pint_runners",
+      "neighborhood": "somerville",
+      "paceNote": "Pace inclusive.",
+      "distanceNote": "3 to 4 miles.",
+      "socialAfter": "Beer after.",
+      "sessions": [
+        {
+          "weekday": 4,
+          "startLocal": "19:00",
+          "meetSpot": "somerville"
+        }
+      ]
+    },
+    {
+      "slug": "remnant-brewing-run-club",
+      "name": "Remnant Brewing Run Club",
+      "category": "social",
+      "stravaClubId": "1055044",
+      "neighborhood": "somerville",
+      "paceNote": "All abilities.",
+      "socialAfter": "Finishes at Remnant Brewing.",
+      "sessions": [
+        {
+          "weekday": 3,
+          "startLocal": "18:30",
+          "meetSpot": "union-square-bow-market",
+          "meetSpotDetail": "Finish is at the brewery. Start point not confirmed."
+        }
+      ]
+    },
+    {
+      "slug": "ritual-run-club",
+      "name": "RITUAL Run Club",
+      "category": "social",
+      "sourceUrl": "https://sweatpals.com/s/boston/run-clubs",
+      "distanceNote": "Part of RITUAL, a Saturday wellness social with run, bootcamp and pilates options.",
+      "sessions": [
+        {
+          "weekday": 6,
+          "startLocal": "09:00",
+          "meetSpot": "boston-varies",
+          "seasonNote": "June through October."
+        }
+      ]
+    },
+    {
+      "slug": "community-running-association",
+      "name": "Community Running Association",
+      "category": "classic",
+      "sourceUrl": "https://www.yelp.com/search?find_desc=Running+Clubs&find_loc=Boston%2C+MA",
+      "neighborhood": "cambridge",
+      "paceNote": "Coached speed workouts.",
+      "sessions": [
+        {
+          "weekday": 1,
+          "startLocal": null,
+          "meetSpot": "cambridge",
+          "seasonNote": "Monday evening. Time and spot not confirmed."
+        },
+        {
+          "weekday": 3,
+          "startLocal": null,
+          "meetSpot": "cambridge",
+          "seasonNote": "Wednesday evening. Time and spot not confirmed."
+        }
+      ]
+    },
+    {
+      "slug": "greater-boston-track-club",
+      "name": "Greater Boston Track Club",
+      "category": "classic",
+      "sourceUrl": "https://www.yelp.com/search?find_desc=Running+Clubs&find_loc=Boston%2C+MA",
+      "paceNote": "Competitive club.",
+      "scheduleStatus": "unknown",
+      "sessions": []
+    },
+    {
+      "slug": "baa-running-club",
+      "name": "Boston Athletic Association Running Club",
+      "category": "classic",
+      "sourceUrl": "https://www.yelp.com/search?find_desc=Running+Clubs&find_loc=Boston%2C+MA",
+      "cost": "dues",
+      "scheduleStatus": "unknown",
+      "sessions": []
+    },
+    {
+      "slug": "cambridge-running-club",
+      "name": "Cambridge Running Club",
+      "category": "classic",
+      "sourceUrl": "unverified",
+      "neighborhood": "cambridge",
+      "scheduleStatus": "unknown",
+      "sessions": []
+    },
+    {
+      "slug": "somerville-road-runners",
+      "name": "Somerville Road Runners",
+      "category": "classic",
+      "sourceUrl": "unverified",
+      "neighborhood": "somerville",
+      "scheduleStatus": "unknown",
+      "sessions": []
+    },
+    {
+      "slug": "marathon-sports-run-clubs",
+      "name": "Marathon Sports run clubs",
+      "category": "brand_gym",
+      "sourceUrl": "https://www.eventbrite.com/d/ma--boston/free--events/running-groups/",
+      "distanceNote": "Store-based group runs at several locations.",
+      "scheduleStatus": "unknown",
+      "sessions": []
+    },
+    {
+      "slug": "boston-hash-house-harriers",
+      "name": "Boston Hash House Harriers",
+      "category": "classic",
+      "sourceUrl": "unverified",
+      "scheduleStatus": "unknown",
+      "sessions": []
+    }
+  ]
+}
